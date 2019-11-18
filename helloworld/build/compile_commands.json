@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/gujinfei/projects/helloworld/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -I/usr/local/Cellar/libevent/2.1.8/include  -Wall -std=c++11 -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/helloworld.dir/helloworld.cpp.o -c /Users/gujinfei/projects/helloworld/helloworld.cpp",
+  "file": "/Users/gujinfei/projects/helloworld/helloworld.cpp"
+}
+]

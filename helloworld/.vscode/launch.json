@@ -24,11 +24,20 @@
             }
         },
         */
+        /*
         {
             "name":"launch",
             "type":"lldb",
             "request": "launch",
             "program": "${workspaceFolder}/helloworld.out",
+            "args": [],
+        },
+        */
+        {
+            "name":"cmake debug",
+            "type":"lldb",
+            "request": "launch",
+            "program": "${command:cmake.launchTargetPath}",
             "args": [],
         } 
     ]

@@ -2,6 +2,24 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "build",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                // Ask msbuild to generate full paths for file names.
+                "-C",
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "silent"
+            },
+        }/*,
+        {
             "label": "Build with Clang",
             "type": "shell",
             "command": "clang++",
@@ -19,6 +37,6 @@
                 "kind": "build",
                 "isDefault": true
             }
-        }
+        }*/
     ]
 }
