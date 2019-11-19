@@ -1,11 +1,13 @@
 #include <event.h>
 #include <stdio.h>
 #include <time.h>
+#include "common_func.h"
 
 static void
 hello(int fd, short event, void *arg)
 {
-    printf("hello man\n");
+    int a = 5, b= 10;
+    printf("hello man:%d\n", Add(a,b));
 }
 
 int main(int argc, const char *argv[]) 

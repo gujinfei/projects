@@ -10,7 +10,10 @@ set(INC_DIR /usr/local/Cellar/libevent/2.1.8/include)
 set(LINK_DIR /usr/local/Cellar/libevent/2.1.8/lib)
 
 
-include_directories(${INC_DIR})
+include_directories(${INC_DIR} ./common)
+add_subdirectory(common)
+
 link_directories(${LINK_DIR})
 link_libraries(event)
 add_executable(helloworld ${DIR_SRCS})
+target_link_libraries(helloworld common)
