@@ -4,14 +4,19 @@
             "name": "macOS",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/Cellar/libevent/2.1.8/include"
+                "/usr/local/Cellar/libevent/2.1.8/include",
+                "/usr/local/Cellar/boost/1.67.0_1/include"
             ],
             "defines": [],
-            "macFrameworkPath": ["/System/Library/Frameworks", "/Library/Frameworks"],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "${default}"
+            "intelliSenseMode": "${default}",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
         }
     ],
     "version": 4

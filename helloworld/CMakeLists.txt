@@ -7,13 +7,13 @@ set(CMAKE_CXX_FLAGS "-Wall -std=c++11")
 
 aux_source_directory(. DIR_SRCS)
 set(INC_DIR /usr/local/Cellar/libevent/2.1.8/include)
-set(LINK_DIR /usr/local/Cellar/libevent/2.1.8/lib)
+set(LINK_DIR /usr/local/Cellar/libevent/2.1.8/lib /usr/local/Cellar/boost/1.67.0_1/lib)
 
 
-include_directories(${INC_DIR} ./common)
+include_directories(${INC_DIR} ./common /usr/local/Cellar/boost/1.67.0_1/include)
 add_subdirectory(common)
 
 link_directories(${LINK_DIR})
 link_libraries(event)
 add_executable(helloworld ${DIR_SRCS})
-target_link_libraries(helloworld common)
+target_link_libraries(helloworld common -lboost_thread-mt -lboost_system)
