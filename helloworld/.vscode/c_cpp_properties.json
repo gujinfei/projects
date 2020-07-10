@@ -4,8 +4,7 @@
             "name": "macOS",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/Cellar/libevent/2.1.8/include",
-                "/usr/local/Cellar/boost/1.67.0_1/include"
+                "/usr/local/Cellar/libevent/2.1.8/include"
             ],
             "defines": [],
             "macFrameworkPath": [
